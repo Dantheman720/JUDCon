@@ -1,0 +1,52 @@
+doctype html
+/[if IE 8]
+  | <html class="ie8 lt-ie9">
+/[if IE 9]
+  | <html class="ie9">
+/ <!--[if (gte IE 9)|!(IE)]<!--> <html> <!--<![endif]-->
+
+head
+  meta charset='utf-8'
+  meta name='viewport' content='width=device-width, initial-scale=1.0'
+  title= page.title || site.title
+  -if page.description
+    meta name="description" content=page.description
+  - if page.author
+    meta name="author" content=page.author
+  - if site.keywords
+    meta name="keywords" content=site.keywords
+  - if site.url
+    link rel="canonical" href=site.url
+  = stylesheets "all" do
+    link rel='stylesheet' type='text/css' href="#{site.base_url}/#{site.context_url}/stylesheets/app.css"
+    link rel='stylesheet' type='text/css' href="#{site.base_url}/#{site.context_url}/stylesheets/magula.css"
+
+  /[if lt IE 9]
+    script type='text/javascript' src='//html5shim.googlecode.com/svn/trunk/html5.js'
+
+body
+#tabnav-panel.tabnav-closed
+  #tabnav.tabnavclearfix
+    .tabcontent
+      p.overview Learn more about Red Hat and our open source communities:
+      .row-fluid
+        span.span4.middlewarelogo
+          img alt=("Red Hat JBoss MIDDLEWARE") src="http://static.jboss.org/common/images/tabzilla/RHJB_Middleware_Logotype.png"          %span.span4
+          ul.level1
+            li.leaf
+              a href="http://www.jboss.org/technology"  Red Hat JBoss Middleware Overview
+            li.leaf
+              a href="http://www.jboss.org/products"  Red Hat JBoss Middleware Products
+            li.leaf
+              a href="http://www.jboss.org/projects"  Red Hat JBoss Projects &amp; Standards
+        span.span4
+          ul.level1
+            li.leaf
+              a href="http://www.redhat.com"  redhat.com
+            li.leaf
+              a href="http://access.redhat.com"  Red Hat Customer Portal
+            li.leaf
+              a href="http://www.openshift.com"  OpenShift
+
+
+  =content
