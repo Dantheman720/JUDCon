@@ -49,4 +49,103 @@ html.js-on.em-increased-6.em-increased-5.em-increased-4.em-increased-3.em-increa
     script[type="text/javascript" src="http://wd-edge.sharethis.com/button/checkOAuth.esi"]
     link[rel="stylesheet" type="text/css" href="http://w.sharethis.com/button/css/buttons.885d3ead9bb996dd5155bfd0ad16570a.css"]
 
-    =content
+body#community.col-float3.leftcol-layout[onclick="if(stWidget.buttonClicked==false){stWidget.stopClosing=false;stWidget.openDuration=0;stWidget.stClose(100);}"]
+  #wrapper
+    #maincontent-wrapper
+      header.main
+        i.nav-toggle.nav-toggle-open
+        .row
+          .large-7.columns
+            h1.logo
+              a[href="http://www.jboss.org/"]
+                | JBoss
+                strong
+                  | Developer
+    nav.top-bar
+      .row.collapse
+        dl.sub-nav
+          dd.home-link
+            a[href="http://www.jboss.org/"]
+              i.fa.fa-home
+          dd.search-wrapper
+            form.search[action="search" method="POST" name="search"]
+              input.query[type="text" name="q" placeholder="Search"]
+          dd.register[style="display: none;"]
+            a[href="https://community.jboss.org/register.jspa"]
+              | Register
+          dd.logged-in[style=""]
+            a.logged-in-name[href="http://community.jboss.org/people/dcoughlin1" style="display: inline;"]
+              img[src="https://community.jboss.org/people/dcoughlin1/avatar/23.png" border="0" alt=""]
+              | Daniel Coughlin
+          dd.login[style="display: none;"]
+            a[href="https://sso.jboss.org/login?service=http://www.jboss.org" data-dropdown="login"]
+              i.fa.fa-user
+              | Login
+        #login.f-dropdown.content.round[data-dropdown-content="true"]
+          h4
+            | Login
+          p
+            | Log in to access unlimited downloads and contribute to the community.
+          form.login
+            input[type="text" name="username" placeholder="Username or email"]
+            input[type="password" name="password" placeholder="Password"]
+            label
+              input[type="checkbox" name="remember"]
+              | Remember Me
+            input.button[type="submit" value="Login"]
+          p.sign-in-options
+            | Or sign in with:
+            i.fa.fa-facebook-square
+            i.fa.fa-google-plus-square
+            i.fa.fa-twitter-square
+          ul.inline-list.text-center
+            li
+              a[href="#"]
+                | Forgot Password
+            li
+              a[href="#"]
+                | Create account
+        .large-24.columns
+          ul.title-area
+            li.name
+          section.top-bar-section
+            ul.left.main-menu
+              li
+                a[href="http://www.jboss.org/technology"]
+                  | Technology
+              li
+                a[href="http://www.jboss.org/get-started"]
+                  | Get Started
+              li
+                a[href="http://www.jboss.org/get-involved"]
+                  | Get Involved
+              li
+                a[href="http://www.jboss.org/forums"]
+                  | Forums
+              li
+                a[href="http://www.jboss.org/downloads"]
+                  | Downloads
+            ul.right.social
+              li
+                a[href="/newsletter"]
+                  i.fa.fa-bullhorn
+              li
+                a[href="http://planet.jboss.org"]
+                  i.fa.fa-rss
+              li
+                a[href="http://www.facebook.com/jboss"]
+                  i.fa.fa-facebook
+              li
+                a[href="http://twitter.com/jbossdeveloper"]
+                  i.fa.fa-twitter
+              li
+                a[href="http://www.linkedin.com/groups?home=&amp;gid=167652"]
+                  i.fa.fa-linkedin
+              li
+                a[href="https://plus.google.com/b/117471670409122206659/117471670409122206659/posts"]
+                  i.fa.fa-google-plus
+              li
+                a[href="https://vimeo.com/jbossdeveloper"]
+                  i.fa.fa-vimeo-square
+
+  =content
